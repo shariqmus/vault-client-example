@@ -42,6 +42,3 @@ cd vault-client-example
 mvn package -DskipTests=true
 mvn exec:java
 ```
-
-# Ref:
-https://github.com/hashicorp/hello-vault-spring
