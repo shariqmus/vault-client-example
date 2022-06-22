@@ -1,6 +1,6 @@
 The code in this repository demonstrates fetching key-value secret from Hashicorp vault.
 
-Code is under src/ folder
+Code is under `src/` folder
 
 # Vault Sample Setup 
 
@@ -32,8 +32,8 @@ vault policy write platformx-policy - << EOF
 EOF
 
 vault write auth/approle/role/platformx-role policies=platformx-policy
-vault read  auth/approle/role/platformx-role/role-id    #8b334292-3d0f-7f70-cb65-9730578e5b4f
-vault write -f auth/approle/role/platformx-role/secret-id    # fc46b702-df2a-560c-7c8c-2a19df3ef44e
+vault read  auth/approle/role/platformx-role/role-id
+vault write -f auth/approle/role/platformx-role/secret-id
 ```
 
 # Build and Run the application
